@@ -50,7 +50,12 @@ return {
       { "<leader>T", "<cmd>TodoTelescope<cr>", desc = "Telescope TODOs" },
     },
   },
+  { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+
+  -- Motion
   { import = "astrocommunity.motion.leap-nvim" },
+  { import = "astrocommunity.motion.nvim-surround", enabled = false },
+  { import = "astrocommunity.motion.harpoon" },
 
   -- Colorschemes
   { import = "astrocommunity.colorscheme.tokyonight" },
