@@ -7,7 +7,7 @@ return {
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.typescript" },
-  { import = "astrocommunity.pack.java", enabled = false }, -- Not worth missing out on IntelliJ, required JDK-17+
+  { import = "astrocommunity.pack.java", enabled = false }, -- Not worth missing out on IntelliJ, requires JDK-17+
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.yaml" },
@@ -53,9 +53,15 @@ return {
   { import = "astrocommunity.motion.leap-nvim" },
 
   -- Colorschemes
-  { import = "astrocommunity.colorscheme.nightfox", enabled = true },
-  { import = "astrocommunity.colorscheme.kanagawa", enabled = true },
-  { import = "astrocommunity.colorscheme.rose-pine" },
-  { import = "astrocommunity.colorscheme.catppuccin" },
   { import = "astrocommunity.colorscheme.tokyonight" },
+  { import = "astrocommunity.colorscheme.nightfox", enabled = true },
+  { import = "astrocommunity.colorscheme.kanagawa", enabled = false },
+  { import = "astrocommunity.colorscheme.catppuccin", enabled = false },
+  {
+    "nyoom-engineering/oxocarbon.nvim",
+  },
+  {
+    "marko-cerovac/material.nvim",
+    init = function() vim.g.material_style = "deep ocean" end,
+  },
 }
