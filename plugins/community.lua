@@ -60,7 +60,7 @@ return {
   -- Colorschemes
   { import = "astrocommunity.colorscheme.tokyonight" },
   { import = "astrocommunity.colorscheme.nightfox", enabled = true },
-  { import = "astrocommunity.colorscheme.kanagawa", enabled = false },
+  { import = "astrocommunity.colorscheme.kanagawa", enabled = true },
   { import = "astrocommunity.colorscheme.catppuccin", enabled = false },
   {
     "nyoom-engineering/oxocarbon.nvim",
