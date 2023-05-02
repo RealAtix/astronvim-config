@@ -11,6 +11,9 @@ return {
       -- Set a formatter
       -- null_ls.builtins.formatting.stylua,
       -- null_ls.builtins.formatting.prettier,
+      -- null_ls.builtins.formatting.prettierd.with {
+      --   condition = function(utils) return utils.has_file { ".prettierrc.js" } end,
+      -- },
     }
     return config -- return final config table
   end,

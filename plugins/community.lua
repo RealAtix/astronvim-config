@@ -5,8 +5,28 @@ return {
   { import = "astrocommunity.pack.rust" },
   { import = "astrocommunity.pack.python" },
   { import = "astrocommunity.pack.lua" },
+  { import = "astrocommunity.bars-and-lines.heirline-mode-text-statusline" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.typescript" },
+  -- {
+  --   "typescript",
+  --   opts = function(_, opts)
+  --     opts.handlers.prettierd = function()
+  --       local null_ls = require "null-ls"
+  --       null_ls.register(null_ls.builtins.formatting.prettierd.with {
+  --         condition = function(util)
+  --           return util.root_has_file "package.json"
+  --             and (
+  --               util.root_has_file ".prettierrc"
+  --               or util.root_has_file ".prettierrc.json"
+  --               or util.root_has_file ".prettierrc.js"
+  --             )
+  --         end,
+  --       })
+  --     end
+  --   end,
+  -- },
+  { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.java", enabled = false }, -- Not worth missing out on IntelliJ, requires JDK-17+
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.markdown" },
