@@ -78,9 +78,9 @@ return {
   { import = "astrocommunity.motion.harpoon" },
 
   -- Colorschemes
-  { import = "astrocommunity.colorscheme.tokyonight" },
-  { import = "astrocommunity.colorscheme.nightfox", enabled = true },
-  { import = "astrocommunity.colorscheme.kanagawa", enabled = true },
+  { import = "astrocommunity.colorscheme.tokyonight-nvim" },
+  { import = "astrocommunity.colorscheme.nightfox-nvim", enabled = true },
+  { import = "astrocommunity.colorscheme.kanagawa-nvim", enabled = true },
   { import = "astrocommunity.colorscheme.catppuccin", enabled = false },
   {
     "nyoom-engineering/oxocarbon.nvim",
