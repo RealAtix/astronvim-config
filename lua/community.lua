@@ -7,21 +7,27 @@
 ---@type LazySpec
 return {
   "AstroNvim/astrocommunity",
-  { import = "astrocommunity.pack.lua" },
 
   -- Language packs
   { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.pack.python" },
+  -- { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.vue" },
+  { import = "astrocommunity.pack.svelte" },
   { import = "astrocommunity.pack.java", enabled = true }, -- Not worth missing out on IntelliJ, requires JDK-17+
+  { import = "astrocommunity.pack.go", enabled = false },
+  { import = "astrocommunity.pack.elixir-phoenix", enabled = false },
+  { import = "astrocommunity.pack.docker" },
+  { import = "astrocommunity.pack.sql", enabled = false },
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.terraform" },
   { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.programming-language-support.nvim-jqx" },
 
   -- Bars and lines
   { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
