@@ -44,6 +44,9 @@ return {
   },
   -- { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
 
+  -- Advanced LSP setup
+  { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
+
   -- Motion
   { import = "astrocommunity.motion.leap-nvim" },
   { import = "astrocommunity.motion.nvim-surround", enabled = false },
