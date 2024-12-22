@@ -17,8 +17,8 @@ return {
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.vue" },
   { import = "astrocommunity.pack.svelte" },
-  { import = "astrocommunity.pack.java", enabled = true }, -- Not worth missing out on IntelliJ, requires JDK-17+
-  { import = "astrocommunity.pack.go", enabled = false },
+  { import = "astrocommunity.pack.java", enabled = false }, -- Not worth missing out on IntelliJ, requires JDK-17+
+  { import = "astrocommunity.pack.go", enabled = true },
   { import = "astrocommunity.pack.elixir-phoenix", enabled = false },
   { import = "astrocommunity.pack.docker" },
   { import = "astrocommunity.pack.sql", enabled = false },
