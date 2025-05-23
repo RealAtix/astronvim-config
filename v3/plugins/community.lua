@@ -3,13 +3,13 @@ return {
 
   -- Language packs
   { import = "astrocommunity.pack.rust" },
-  { import = "astrocommunity.pack.python" },
+  { import = "astrocommunity.pack.python-ruff" },
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.bars-and-lines.heirline-mode-text-statusline" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.typescript" },
   { import = "astrocommunity.pack.vue" },
-  { import = "astrocommunity.pack.java", enabled = true }, -- Not worth missing out on IntelliJ, requires JDK-17+
+  { import = "astrocommunity.pack.java", enabled = false }, -- Not worth missing out on IntelliJ, requires JDK-17+
   { import = "astrocommunity.pack.json" },
   { import = "astrocommunity.pack.markdown" },
   { import = "astrocommunity.pack.yaml" },
