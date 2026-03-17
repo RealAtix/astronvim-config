@@ -11,7 +11,12 @@ return {
   -- Language packs
   { import = "astrocommunity.pack.rust" },
   -- { import = "astrocommunity.pack.python" },
-  { import = "astrocommunity.pack.python-ruff" },
+
+  -- Base pack with basedpyright and ruff
+  { import = "astrocommunity.pack.python.base" },
+  { import = "astrocommunity.pack.python.basedpyright" },
+  { import = "astrocommunity.pack.python.ruff" },
+
   { import = "astrocommunity.pack.lua" },
   { import = "astrocommunity.pack.bash" },
   { import = "astrocommunity.pack.typescript" },
