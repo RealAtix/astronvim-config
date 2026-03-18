@@ -32,14 +32,13 @@ return {
   { import = "astrocommunity.pack.yaml" },
   { import = "astrocommunity.pack.terraform" },
   { import = "astrocommunity.pack.html-css" },
+  { import = "astrocommunity.pack.toml" },
   { import = "astrocommunity.programming-language-support.nvim-jqx" },
 
   -- Bars and lines
   { import = "astrocommunity.recipes.heirline-mode-text-statusline" },
 
-  -- Utils
-  { import = "astrocommunity.core-runner.sniprun", enabled = false },
-  { import = "astrocommunity.completion.copilot-lua-cmp", enabled = false },
+  -- Editing support
   { import = "astrocommunity.editing-support.todo-comments-nvim" },
   {
     "todo-comments.nvim",
@@ -47,15 +46,40 @@ return {
       { "<leader>T", "<cmd>TodoTelescope<cr>", desc = "Telescope TODOs" },
     },
   },
+  { import = "astrocommunity.editing-support.nvim-treesitter-context" },
+  { import = "astrocommunity.editing-support.undotree" },
+  { import = "astrocommunity.editing-support.refactoring-nvim" },
   -- { import = "astrocommunity.markdown-and-latex.markdown-preview-nvim" },
+
+  -- Completion
+  { import = "astrocommunity.completion.copilot-lua-cmp", enabled = false },
+
+  -- Code runner
+  { import = "astrocommunity.core-runner.sniprun", enabled = false },
+
+  -- Diagnostics
+  { import = "astrocommunity.diagnostics.trouble-nvim" },
+
+  -- Debugging
+  { import = "astrocommunity.debugging.nvim-dap-virtual-text" },
+
+  -- Test
+  { import = "astrocommunity.test.neotest" },
+
+  -- Git
+  { import = "astrocommunity.git.gitlinker-nvim" },
 
   -- Advanced LSP setup
   { import = "astrocommunity.recipes.astrolsp-no-insert-inlay-hints" },
 
   -- Motion
-  { import = "astrocommunity.motion.leap-nvim" },
+  { import = "astrocommunity.motion.flash-nvim" },
   { import = "astrocommunity.motion.nvim-surround", enabled = false },
   { import = "astrocommunity.motion.harpoon" },
+
+  -- Workflow (learning vim better)
+  { import = "astrocommunity.workflow.hardtime-nvim" },
+  { import = "astrocommunity.workflow.precognition-nvim" },
 
   -- Colorschemes
   { import = "astrocommunity.colorscheme.tokyonight-nvim" },
